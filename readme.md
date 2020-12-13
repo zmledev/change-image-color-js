@@ -6,6 +6,7 @@ Source Code - #Git_Hub : http://urys.xyz/rrsj8
 Thanks to Like  the video and subscribe.
 https://ziedmaaloul.site
 
+CC TO : Picture Designed by #slidesgo http://urys.xyz/27tr2
 ----------------------------------------
 Changer la couleur de l'image en utilisant Javascript:
 
