@@ -42,7 +42,14 @@
 		function changeit(color) {
 			document.getElementById("bgimg").style.backgroundColor = color;
 		}
+		    function removeElement(elementId) {
+        	var element = document.getElementsByTagName(elementId)[0];
+        	element.parentNode.removeChild(element);
+   		 }
 		function generateimg(){
+				if (document.getElementsByTagName("canvas").length > 0) {
+					removeElement("canvas");
+				}
 				html2canvas(document.querySelector("#bgimg")).then(canvas => {
 		    		document.body.appendChild(canvas)
 				});	
