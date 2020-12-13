@@ -23,29 +23,30 @@
 		height: 50px;
 		width: 50px;
 	}
+	.coloring {
+	padding-top: 100px;
+	}
+	.colorsPattern{
+		margin-left: 20px;
+		width: 40%;
+		float: right;
+	}
 	.generate{
 		margin-top: 20px;
 		height: 40px;
 		width: 70px;
 	}
-.coloring {
-	padding-top: 100px;
-}
-.colorsPattern{
-	margin-left: 20px;
-	width: 40%;
-	float: right;
-}
 </style>
 	<script type="text/javascript" src="html2canvas.js"></script>
 	<script type="text/javascript">
 		function changeit(color) {
 			document.getElementById("bgimg").style.backgroundColor = color;
 		}
-		function generateimg() {
-			html2canvas(document.querySelector("#bgimg")).then(canvas => {
-    		document.body.appendChild(canvas)
-			});		
+		function generateimg(){
+				html2canvas(document.querySelector("#bgimg")).then(canvas => {
+		    		document.body.appendChild(canvas)
+				});	
+
 		}
 	</script>
 
@@ -61,8 +62,8 @@
  	<div class="Colors" id="bluediv" onclick="changeit('blue')"></div>
  	<div class="Colors" id="yellowdiv" onclick="changeit('yellow')"></div>
  	<div class="Colors" id="greendiv" onclick="changeit('green')"></div>
- 	<button class="Generate" id="blancdiv" onclick="generateimg()">Generate</button>
- </div>
+ 	<button class="generate" onclick="generateimg()">Generate</button>
+ 	</div>
  </div>
 </body>
 </html>
