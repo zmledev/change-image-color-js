@@ -1,0 +1,56 @@
+<html>
+<head>
+<style type="text/css">
+	#reddiv {
+		background: red;
+	}
+	#yellowdiv {
+		background: yellow;
+	}
+	#greendiv {
+		background: green;
+	}
+	#bluediv {
+		background: blue;
+	}
+
+	#bgimg{
+		width:50.9%;
+		float: left;
+	}
+	.Colors{
+		margin-top: 20px;
+		height: 50px;
+		width: 50px;
+	}
+.coloring {
+	padding-top: 100px;
+}
+.colorsPattern{
+	margin-left: 20px;
+	width: 40%;
+	float: right;
+}
+</style>
+	<script type="text/javascript">
+		function changeit(color) {
+			document.getElementById("bgimg").style.backgroundColor = color;
+		}
+	</script>
+</head>
+
+<body>
+ <div id="bgimg">
+ 	<img src="bg2.png"/>
+
+ </div>
+ <div class="colorsPattern">
+ 	<div class="coloring">
+ 	<div class="Colors" id="reddiv" onclick="changeit('red')"></div>
+ 	<div class="Colors" id="bluediv" onclick="changeit('blue')"></div>
+ 	<div class="Colors" id="yellowdiv" onclick="changeit('yellow')"></div>
+ 	<div class="Colors" id="greendiv" onclick="changeit('green')"></div>
+ </div>
+ </div>
+</body>
+</html>
