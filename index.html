@@ -42,10 +42,11 @@
 		function changeit(color) {
 			document.getElementById("bgimg").style.backgroundColor = color;
 		}
-		    function removeElement(elementId) {
-        	var element = document.getElementsByTagName(elementId)[0];
-        	element.parentNode.removeChild(element);
-   		 }
+		  function removeElement(elementTag){
+
+		  	var element = document.getElementsByTagName(elementTag)[0];
+		  	element.parentNode.removeChild(element);
+		  }
 		function generateimg(){
 				if (document.getElementsByTagName("canvas").length > 0) {
 					removeElement("canvas");
